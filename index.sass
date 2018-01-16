@@ -1,0 +1,183 @@
+/**
+ * Created by alejandrorioscalera
+ * On 16/1/18
+ *
+ * -- SOCIAL NETWORKS --
+ *
+ * GitHub: https://github.com/clonalejandro or @clonalejandro
+ * Website: https://clonalejandro.me/
+ * Twitter: https://twitter.com/clonalejandro11/ or @clonalejandro11
+ * Keybase: https://keybase.io/clonalejandro/
+ *    
+ * -- LICENSE --
+ *
+ * All rights reserved for clonalejandro ©malextrap 2017 / 2018
+ */
+
+/** SMALL CONSTRUCTORS **/
+
+@import "../elements/colors"
+
+$alertDanger: #ef254f
+$alertWarning: #ED9C16
+$alertPrimary: #538DF5
+$alertInfo: #0583CA
+$alertDark: #2e354a
+
+$alertDangerRGB: rgba(239, 37, 79, 0.8)
+$alertWarningRGB: rgba(237, 156, 22, 0.8)
+$alertPrimaryRGB: rgba(83, 141, 245, 0.8)
+$alertInfoRGB: rgba(5, 131, 202, 0.8)
+$alertDarkRGB: rgba(46, 53, 74, 0.8)
+$alertSuccessRGB: rgba(95, 179, 53, 0.8)
+
+
+/** REST **/
+
+.alert
+  &.top
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    position: relative
+    text-align: center
+    overflow: hidden
+    -webkit-transition: opacity 0.2s, background-color 0.2s
+    -moz-transition: opacity 0.2s, background-color 0.2s
+    transition: opacity 0.2s, background-color 0.2s
+    height: 90px
+    line-height: 90px
+    display: none
+    -webkit-transition: background-color 0.2s, opacity 0.2s
+    -moz-transition: background-color 0.2s, opacity 0.2s
+    transition: background-color 0.2s, opacity 0.2s
+
+    &.primary > .content a,
+    &.info > .content a,
+    &.success > .content a,
+    &.warning > .content a,
+    &.danger > .content a,
+    &.dark > .content a
+      text-decoration: none
+      color: #fff
+
+    &.primary
+      background: $alertPrimary
+
+    &.info
+      -webkit-transition: opacity 0.3s
+      -moz-transition: opacity 0.3s
+      transition: opacity 0.3s
+      background: $alertInfo
+
+    &.success
+      -webkit-transition: opacity 0.3s
+      -moz-transition: opacity 0.3s
+      transition: 0.3s
+      background: $green
+
+    &.warning
+      -webkit-transition: opacity 0.3s
+      -moz-transition: opacity 0.3s
+      transition: opacity 0.3s
+      background: $alertWarning
+
+    &.danger
+      -moz-transition: opacity 0.3s
+      -webkit-transition: opacity 0.3s
+      transition: opacity 0.3s
+      background: $alertDanger
+
+    &.dark
+      -moz-transition: opacity 0.3s
+      -webkit-transition: opacity 0.3s
+      transition: opacity 0.3s
+      background: $alertDark
+
+    &.special.info
+      background: $alertInfo url("https://clonalejandro.github.io/cdn/top-banner-pattern-course-1.svg")
+    &.special.warning
+      background: $alertWarning url("https://clonalejandro.github.io/cdn/top-banner-pattern-course-2.svg")
+    &.special.dark
+      background: $alertDark url("https://clonalejandro.github.io/cdn/birthday-1-pattern.svg")
+
+    &.primary:hover,
+    &.dark:hover,
+    &.info:hover,
+    &.success:hover,
+    &.warning:hover,
+    &.danger:hover
+      opacity: 0.95
+
+    &.info
+      &::after
+        background-image: -webkit-linear-gradient(left, rgba(5, 131, 202, 0), rgba(5, 131, 202, 0.8))
+        background-image: linear-gradient(to right, rgba(5, 131, 202, 0), rgba(5, 131, 202, 0.8))
+      &::before
+        left: 0
+        background-image: -webkit-linear-gradient(left, rgba(5, 131, 202, 0.8), rgba(5, 131, 202, 0))
+        background-image: linear-gradient(to right, rgba(5, 131, 202, 0.8), rgba(5, 131, 202, 0))
+    
+    &.success
+      &::after
+        background-image: -webkit-linear-gradient(left, rgba(95, 179, 53, 0), rgba(95, 179, 53, 0.8))
+        background-image: linear-gradient(to right, rgba(95, 179, 53, 0), rgba(95, 179, 53, 0.8))
+      &::before
+        left: 0
+        background-image: -webkit-linear-gradient(left, rgba(95, 179, 53, 0.8), rgba(95, 179, 53, 0))
+        background-image: linear-gradient(to right, rgba(95, 179, 53, 0.8), rgba(95, 179, 53, 0))
+    
+    &.warning
+      &::after
+        background-image: -webkit-linear-gradient(left, rgba(237, 156, 22, 0), rgba(237, 156, 22, 0.8))
+        background-image: linear-gradient(to right, rgba(237, 156, 22, 0), rgba(237, 156, 22, 0.8))
+      &::before
+        left: 0
+        background-image: -webkit-linear-gradient(left, rgba(237, 156, 22, 0.8), rgba(237, 156, 22, 0))
+        background-image: linear-gradient(to right, rgba(237, 156, 22, 0.8), rgba(237, 156, 22, 0))
+
+    &.danger
+      &::after
+        background-image: -webkit-linear-gradient(left, rgba(239, 37, 79, 0), rgba(239, 37, 79, 0.8))
+        background-image: linear-gradient(to right, rgba(239, 37, 79, 0), rgba(239, 37, 79, 0.8))
+      &::before
+        left: 0
+        background-image: -webkit-linear-gradient(left, rgba(239, 37, 79, 0.8), rgba(239, 37, 79, 0))
+        background-image: linear-gradient(to right, rgba(239, 37, 79, 0.8), rgba(239, 37, 79, 0))
+
+    &.dark
+      &::after
+        background-image: -webkit-linear-gradient(left, rgba(46, 53, 74, 0), rgba(46, 53, 74, 0.8))
+        background-image: linear-gradient(to right, rgba(46, 53, 74, 0), rgba(46, 53, 74, 0.8))
+      &::before
+        left: 0
+        background-image: -webkit-linear-gradient(left, rgba(46, 53, 74, 0.8), rgba(46, 53, 74, 0))
+        background-image: linear-gradient(to right, rgba(46, 53, 74, 0.8), rgba(46, 53, 74, 0))
+
+
+    img
+      vertical-align: middle
+      margin-right: 22px
+      -webkit-transform: translateY(-4px)
+      -moz-transform: translateY(-4px)
+      -ms-transform: translateY(-4px)
+      -o-transform: translateY(-4px)
+      transform: translateY(-4px)
+
+    display: block
+
+  > .content
+    display: block
+    height: 100%
+    -webkit-transition: all 0.2s
+    -moz-transition: all 0.2s
+    transition: all 0.2s
+    color: $pure_white
+    font-size: 18px !important
+    font-size: 1.125rem
+    font-family: "Open Sans", helvetica, arial, sans-serif
+    font-weight: bold
+    position: relative
+    border: none
+
+    &:hover
+      border: none !important
