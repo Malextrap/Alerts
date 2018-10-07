@@ -13,6 +13,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
     </div>
+    <a class="closer"/>
 </div>
 ```
 <br>
@@ -26,6 +27,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
@@ -40,6 +42,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
@@ -54,6 +57,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
@@ -68,6 +72,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
@@ -82,6 +87,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
@@ -96,6 +102,7 @@ Alerts for this framework click for test <a href="https://malextrap.github.io/Al
             Malextrap, Framework based on flexbox
         </a>
         <button class="btn red animated">View more</button>
+        <a class="closer"/>
     </div>
 </div>
 ```
