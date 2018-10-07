@@ -16,7 +16,7 @@
 
 /** SMALL CONSTRUCTORS **/
 
-@import "colors"
+@import "../elements/colors"
 
 $alertDanger: #ef254f
 $alertWarning: #ED9C16
@@ -181,3 +181,40 @@ $alertSuccessRGB: rgba(95, 179, 53, 0.8)
 
     &:hover
       border: none !important
+
+.alert > .closer
+  cursor: pointer
+  position: absolute
+  top: 8px
+  right: 8px
+  width: 30px
+  height: 30px
+  overflow: hidden
+  text-indent: 100%
+  background: 50% no-repeat
+  &::after
+    -webkit-transform: rotate(-45deg)
+    -moz-transform: rotate(-45deg)
+    -ms-transform: rotate(-45deg)
+    -o-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+    right: 8px
+    content: ""
+    position: absolute
+    top: 12px
+    width: 14px
+    height: 3px
+    background-color: $terciary
+  &::before
+    content: ""
+    position: absolute
+    top: 12px
+    width: 14px
+    height: 3px
+    background-color: $terciary
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    transform: rotate(45deg)
+    left: 8px
